@@ -1,34 +1,64 @@
 import React from "react"
 
+import vkSvg from '../assets/vk.svg'
+import insSvg from '../assets/icon.svg'
+
 function Header() {
     return (
         <div>
         <div className="header">
             <h1>𝒱𝒾𝒸𝓉𝑜𝓇𝒾𝒶 𝒮𝒽𝑒𝓀𝒽𝑜𝓋𝓉𝓈𝑜𝓋𝒶</h1>
         </div>
-        <div className="wrapper">
-            <nav className="menu__nav">
-             <ul className="menu__ul">
-             <li className="folder__collection">
-                 <a aria-haspopup="true" href="#" className="menu__a">PERSONAL</a>
-             </li>
-             <li className="folder__collection">
-                 <a aria-haspopup="true" href="#" className="menu__a">COMMISSIONED</a>
+        <div className="header-wrapper">
+            <nav className="menu">
+             <ul className="menu__list">
+                <li >
+                    <a  href="#" className="menu__link">PERSONAL</a>
+                    <ul className="sub-menu__list">
+                      <li>
+                         <a  href="#" className="sub-menu__link">Faces, Places</a>
+                      </li>
+                      <li >
+                         <a  href="#" className="sub-menu__link">Imperfection</a>
+                      </li>
+                      <li >
+                         <a  href="#" className="sub-menu__link">AMEN</a>
+                      </li>
+                 </ul>
+               </li>
+             <li>
+                 <a  href="#" className="menu__link">COMMISSIONED</a>
+                 <ul className="sub-menu__list">
+                    <li >
+                          <a  href="#" className="sub-menu__link">Nature</a>
+                    </li>
+                    <li >
+                          <a  href="#" className="sub-menu__link">Inspiration</a>
+                    </li>
+                 </ul>
              </li>
              <li className="folder__collection">
                  <a aria-haspopup="true" href="#" className="menu__a">VIDEO</a>
              </li>
              <li className="folder__collection">
-                 <a aria-haspopup="true" href="#" className="menu__a">ABOUT</a>
+                 <a  href="#" className="menu__link">ABOUT</a>
+                 <ul className="sub-menu__list">
+                    <li >
+                          <a  href="#" className="sub-menu__link">Biography</a>
+                    </li>
+                    <li >
+                          <a  href="#" className="sub-menu__link">Hobby</a>
+                    </li>
+                 </ul>
              </li>
              <li className="page__collection">
-                 <a  href="#" className="menu__a">CONTACT</a>
+                 <a  href="#" className="menu__link">CONTACT</a>
             </li>
              <li className="external__link">
-                 <a  href="https://vk.com/wow_viiii" className="menu__a"><img src="" alt="#VICTORY" /></a>
+                 <a  href="https://vk.com/wow_viiii" className="menu__link"><img  src={vkSvg}alt="VICTORY" /></a>
              </li>
              <li className="external__link">
-                 <a  href="#" className="menu__a"><img src="" alt="VICTORY" /></a>
+                 <a  href="#" className="menu__link"><img  src={insSvg} alt="VICTORY" /></a>
              </li>
              </ul>
              </nav>

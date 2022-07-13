@@ -1,7 +1,7 @@
 @import '../variables';
 
 .header{
-    padding: 10px 0;
+    padding-top: 10px;
 
     h1 {
         text-align: center;
@@ -10,41 +10,6 @@
     }
 }
 
-.wrapper {
-    width: 100%;
-    z-index: 1000;
-    position: relative;
-    
-    .menu__nav {
-        max-width: 800px;
-        position: relative;
-        left: 550px;
-        bottom: 40px;
-    }
      
-    .menu__ul {
-        display: flex;
-        justify-content: space-between;  
-    }
+
     
-    .folder__collection {
-        list-style-type: none;
-    }
-    
-    .page__collection{
-        list-style-type: none;
-    }
-
-    .external__link{
-        list-style-type: none;
-    }
-
-    .menu__a{
-        color: $black;
-        text-decoration: none;
-        cursor: pointer;
-        text-transform: uppercase;
-    }
-
-   
-}
