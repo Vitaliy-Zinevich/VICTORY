@@ -16,13 +16,13 @@ function Header() {
                     <a  href="#" className="menu__link">PERSONAL</a>
                     <ul className="sub-menu__list">
                       <li>
-                         <a  href="#" className="sub-menu__link">Faces, Places</a>
+                         <a  href="#" className="sub-menu__link1">Faces</a>
                       </li>
                       <li >
-                         <a  href="#" className="sub-menu__link">Imperfection</a>
+                         <a  href="#" className="sub-menu__link1">Imperfection</a>
                       </li>
                       <li >
-                         <a  href="#" className="sub-menu__link">AMEN</a>
+                         <a  href="#" className="sub-menu__link1">AMEN</a>
                       </li>
                  </ul>
                </li>
@@ -30,10 +30,10 @@ function Header() {
                  <a  href="#" className="menu__link">COMMISSIONED</a>
                  <ul className="sub-menu__list">
                     <li >
-                          <a  href="#" className="sub-menu__link">Nature</a>
+                          <a  href="#" className="sub-menu__link2">Nature</a>
                     </li>
                     <li >
-                          <a  href="#" className="sub-menu__link">Inspiration</a>
+                          <a  href="#" className="sub-menu__link2">Inspiration</a>
                     </li>
                  </ul>
              </li>
@@ -44,10 +44,10 @@ function Header() {
                  <a  href="#" className="menu__link">ABOUT</a>
                  <ul className="sub-menu__list">
                     <li >
-                          <a  href="#" className="sub-menu__link">Biography</a>
+                          <a  href="#" className="sub-menu__link3">Biography</a>
                     </li>
                     <li >
-                          <a  href="#" className="sub-menu__link">Hobby</a>
+                          <a  href="#" className="sub-menu__link3">Hobby</a>
                     </li>
                  </ul>
              </li>
