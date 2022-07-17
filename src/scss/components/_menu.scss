@@ -1,0 +1,53 @@
+@import '../variables';
+
+.menu {
+
+    a {
+       text-decoration: none;
+       color: $hover;
+ 
+       &:hover {
+         color: $black;
+         font-weight: bolder;
+     }
+    }
+ 
+    li {
+       list-style-type: none;
+       position: relative;
+       
+         &:hover .sub-menu__list{
+              display: block;
+     }
+    }
+ }
+ 
+ .menu__list {
+     display: flex;
+     justify-content: space-around;
+ }
+ 
+ .sub-menu__list {
+     display: none;
+     position: absolute;
+     left: 0px;
+     padding: 3px 0px 0px 0px;
+     background-color: $background;
+ 
+     li {
+     padding: 10px 0px 0px 0px;
+    
+ 
+ 
+     a {
+         color: $hover;
+ 
+         &:hover{
+             color: $black;
+             font-weight: bolder;
+ 
+         }
+     }
+     }
+ }
+ 
