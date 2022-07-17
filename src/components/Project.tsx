@@ -5,7 +5,7 @@ import PersonalSlider from "./PersonalSlider";
 
 
 
-function Project() {
+const Project = () => {
     return (
         <div>
           <Header/>

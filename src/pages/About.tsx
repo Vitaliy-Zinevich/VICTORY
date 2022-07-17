@@ -1,6 +1,6 @@
 import React from "react";
 
-function About () {
+const About = () => {
     return (
         <li className="folder__collection">
              <a  href="#" className="menu__link">ABOUT</a>

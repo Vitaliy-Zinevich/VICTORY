@@ -1,7 +1,7 @@
 import React from "react";
 import insSvg from '../assets/icon.svg'
 
-function Instagram() {
+const Instagram = () => {
     return (
         <li className="external__link">
             <a  href="#" className="menu__link"><img  src={insSvg} alt="VICTORY" /></a>

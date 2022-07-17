@@ -1,6 +1,6 @@
 import React from "react";
 
-function Commissioned () {
+const Commissioned = () => {
     return (
         <li>
           <a  href="#" className="menu__link">COMMISSIONED</a>

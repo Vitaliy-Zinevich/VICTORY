@@ -1,20 +1,30 @@
 @import '../variables';
 
 
+.main-container {
+    height: 500px;
+    width: 800px;
+}
+
+.window {
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+}
+
 .sliderBlock {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+    display: flex;
     height: 500px;
     background-color: rgba(175,175,175,.1);
 }
 
 
-.personalSlider1 {
+.personalSlider {
     border-radius: 10px;
+    margin-left: 200px;
 
     img {
         width:  400px;
-        height: 500px;
+        height: 100%;
     }
 }

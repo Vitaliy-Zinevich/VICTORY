@@ -1,6 +1,6 @@
 import React from "react";
 
-function Video () {
+const Video = () => {
     return (
         <li className="folder__collection">
            <a aria-haspopup="true" href="#" className="menu__a">VIDEO</a>

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 
-function Header () {
+const Header = () => {
     return (
         <Link to="/" style={{ textDecoration: 'none' }}>
           <div className="header">

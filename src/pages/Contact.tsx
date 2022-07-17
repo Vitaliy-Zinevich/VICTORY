@@ -1,6 +1,6 @@
 import React from "react";
 
-function Contact () {
+const Contact = () => {
     return (
         <li className="page__collection">
              <a  href="#" className="menu__link">CONTACT</a>

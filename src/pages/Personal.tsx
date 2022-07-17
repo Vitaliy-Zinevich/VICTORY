@@ -1,6 +1,6 @@
 import React from "react";
 
-function Personal () {
+const Personal = () => {
     return (
         <li >
           <a  href="#" className="menu__link">PERSONAL</a>
