@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Video = () => {
     return (
         <li className="folder__collection">
-           <a aria-haspopup="true" href="#" className="menu__a">VIDEO</a>
+           <Link aria-haspopup="true" to="#" className="menu__a">VIDEO</Link>
         </li>
     )
 }

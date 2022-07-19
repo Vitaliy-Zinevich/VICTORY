@@ -1,15 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Commissioned = () => {
     return (
         <li>
-          <a  href="#" className="menu__link">COMMISSIONED</a>
+          <Link to="#" className="menu__link">COMMISSIONED</Link>
             <ul className="sub-menu__list">
                 <li >
-                  <a  href="#" className="sub-menu__link2">Nature</a>
+                  <Link to="#" className="sub-menu__link2">Nature</Link>
                 </li>
                 <li >
-                  <a  href="#" className="sub-menu__link2">Inspiration</a>
+                  <Link  to="#" className="sub-menu__link2">Inspiration</Link>
                 </li>
             </ul>
       </li>

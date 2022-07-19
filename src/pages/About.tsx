@@ -1,15 +1,16 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const About = () => {
     return (
         <li className="folder__collection">
-             <a  href="#" className="menu__link">ABOUT</a>
+             <Link to="#" className="menu__link">ABOUT</Link >
                <ul className="sub-menu__list">
                  <li >
-                     <a  href="#" className="sub-menu__link3">Biography</a>
+                     <Link to="#" className="sub-menu__link3">Biography</Link >
                  </li>
                  <li >
-                     <a  href="#" className="sub-menu__link3">Hobby</a>
+                     <Link to="#" className="sub-menu__link3">Hobby</Link >
                  </li>
                </ul>
          </li>

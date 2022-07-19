@@ -1,18 +1,19 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Personal = () => {
     return (
         <li >
-          <a  href="#" className="menu__link">PERSONAL</a>
+          <Link to="/" className="menu__link">PERSONAL</Link >
            <ul className="sub-menu__list">
             <li>
-               <a  href="#" className="sub-menu__link1">Faces</a>
+               <Link to="#" className="sub-menu__link1">Faces</Link >
             </li>
             <li >
-              <a  href="#" className="sub-menu__link1">Imperfection</a>
+              <Link to="/imperfection" className="sub-menu__link1">Imperfection</Link >
             </li>
             <li >
-             <a  href="#" className="sub-menu__link1">AMEN</a>
+             <Link to="#" className="sub-menu__link1">AMEN</Link >
             </li>
           </ul>
        </li>
