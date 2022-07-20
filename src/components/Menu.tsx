@@ -7,7 +7,7 @@ import Contact from "../pages/Contact"
 import Vk from "./Vk"
 import Instagram from "./Instagram"
 
-const Menu = () => {
+const Menu: React.FC = () => {
     return (
         <div className="header-wrapper">
             <nav className="menu">

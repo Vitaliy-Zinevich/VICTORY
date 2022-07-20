@@ -2,7 +2,7 @@ import {motion}  from 'framer-motion';
 import {useRef, useState, useEffect} from 'react';
 import images from "./imagesPersonal";
 
-const PersonalSlider = () => {
+const PersonalSlider: React.FC = () => {
     const [width, setWidth] = useState(0);
     const carousel = useRef() as React.MutableRefObject<HTMLDivElement>;
 

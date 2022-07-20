@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Contact = () => {
+const Contact: React.FC = () => {
     return (
         <li className="page__collection">
-             <Link  to="#" className="menu__link">CONTACT</Link>
+             <Link  to="/contact" className="menu__link">CONTACT</Link>
         </li>
     )
 }

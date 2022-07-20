@@ -20,6 +20,7 @@
        
          &:hover .sub-menu__list{
               display: block;
+              z-index: 999;
      }
     }
  }
@@ -39,10 +40,9 @@
      li {
         padding: 10px 0px 0px 0px;
     
- 
- 
      a {
          color: $hover;
+    
  
          &:hover{
              color: $black;

@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const About = () => {
+const About: React.FC = () => {
     return (
-        <li className="folder__collection">
+        <div>
+          <li className="folder__collection">
              <Link to="#" className="menu__link">ABOUT</Link >
                <ul className="sub-menu__list">
                  <li >
@@ -13,7 +14,8 @@ const About = () => {
                      <Link to="#" className="sub-menu__link3">Hobby</Link >
                  </li>
                </ul>
-         </li>
+           </li>
+        </div>
     )
 }
 
