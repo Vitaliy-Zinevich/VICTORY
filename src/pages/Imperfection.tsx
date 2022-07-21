@@ -1,15 +1,13 @@
-import ImperfectionPost from "../components/Imperfection/ImperfectionPost";
-import ImperfectionSlider from "../components/Imperfection/ImperfectionSlider";
-
+import ImperfectionPost from '../components/Imperfection/ImperfectionPost';
+import ImperfectionSlider from '../components/Imperfection/ImperfectionSlider';
 
 const Imperfection: React.FC = () => {
-
-    return (
-     <div>
+  return (
+    <div>
       <ImperfectionSlider />
       <ImperfectionPost />
-     </div>
-    )
-}
+    </div>
+  );
+};
 
-export default Imperfection ;
+export default Imperfection;
