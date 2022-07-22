@@ -31,20 +31,22 @@
   label {
     display: block;
     margin: 0px 0px 10px 0px;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   input {
     background-color: $input;
     height: 35px;
-    width: 160px;
+    width: 200px;
     margin-right: 10px;
+    margin-left: 15px;
     border: 1px solid #ccc;
     border-radius: 2px;
     line-height: normal;
     font-family: sans-serif;
     font-size: 14px;
     padding: 5px;
+    padding-left: 10px;
   }
 
   p {
@@ -58,7 +60,7 @@
   label {
     display: block;
     margin: 0px 0px 10px 0px;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   input {
@@ -66,12 +68,14 @@
     background-color: $input;
     height: 30px;
     margin-right: 10px;
+    margin-top: 10px;
     border: 1px solid #ccc;
     border-radius: 2px;
     line-height: normal;
     font-family: sans-serif;
     font-size: 14px;
     padding: 5px;
+    padding-left: 10px;
   }
 }
 
@@ -81,14 +85,15 @@
   label {
     display: block;
     margin: 0px 0px 10px 0px;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   textarea {
-    width: 100%;
+    width: 99%;
     background-color: $input;
     min-height: 100px;
     margin-right: 10px;
+    margin-top: 10px;
     border: 1px solid #ccc;
     border-radius: 2px;
     line-height: normal;

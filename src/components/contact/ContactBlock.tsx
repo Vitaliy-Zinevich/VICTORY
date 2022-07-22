@@ -1,6 +1,25 @@
 import React from 'react';
+import { SubmitHandler, useForm } from 'react-hook-form';
 
 const ContactBlock: React.FC = () => {
+  type Inputs = {
+    firstName: string;
+    lastName: string;
+    mail: string;
+    message: string;
+    exampleRequired: string;
+  };
+
+  const {
+    register,
+    formState: { errors },
+    handleSubmit,
+  } = useForm<Inputs>();
+
+  const onSubmit: SubmitHandler<Inputs> = (data) => {
+    alert(JSON.stringify(data));
+  };
+
   return (
     <div className="contact__wrapper">
       <div className="container">
@@ -12,27 +31,50 @@ const ContactBlock: React.FC = () => {
             <p>+7 978 678 92 97</p>
             <p>Photographs on this website are available for purchase.</p>
           </div>
-          <div className="form__block">
+          <form className="form__block" onSubmit={handleSubmit(onSubmit)}>
             <div className="name__block">
-              <label>Name *</label>
-              <input type="text" name="first-name" />
-              <input type="text" name="last-name" />
-              <p>
-                First Name
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                Last Name
-              </p>
+              <label>
+                First Name*
+                <input
+                  {...register('firstName', {
+                    required: true,
+                  })}
+                />
+              </label>
+            </div>
+            <div className="name__block">
+              <label>
+                Last Name*
+                <input
+                  {...register('lastName', {
+                    required: true,
+                  })}
+                />
+              </label>
             </div>
             <div className="email__block">
-              <label>Email Address *</label>
-              <input type="text" name="mail" />
+              <label>
+                Email Address *
+                <input
+                  {...register('mail', {
+                    required: true,
+                  })}
+                />
+              </label>
             </div>
             <div className="message__block">
-              <label>Message *</label>
-              <textarea name="message"> </textarea>
+              <label>
+                Message *
+                <textarea
+                  {...register('message', {
+                    required: true,
+                  })}>
+                  {' '}
+                </textarea>
+              </label>
             </div>
-            <button className="contact__button">Submit</button>
-          </div>
+            <input type="submit" value="SUBMIT" className="contact__button" />
+          </form>
         </div>
       </div>
     </div>
