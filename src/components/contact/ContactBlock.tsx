@@ -1,77 +1,106 @@
 import React from 'react';
+import { useState } from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
+import ContentBlock from './ContentBlock';
 
 const ContactBlock: React.FC = () => {
   type Inputs = {
     firstName: string;
     lastName: string;
     mail: string;
-    message: string;
+    messages: string;
     exampleRequired: string;
   };
+
+  const [value, setValue] = useState('');
 
   const {
     register,
     formState: { errors },
     handleSubmit,
-  } = useForm<Inputs>();
+    reset,
+  } = useForm<Inputs>({
+    mode: 'onBlur',
+  });
 
   const onSubmit: SubmitHandler<Inputs> = (data) => {
     alert(JSON.stringify(data));
+    reset();
   };
 
   return (
     <div className="contact__wrapper">
       <div className="container">
         <div className="contact__block">
-          <div className="content__block">
-            <h3>Contact</h3>
-            <p>I am currently based in Simferopol, Crimea.</p>
-            <p>If you have any questions please don’t hesitate to contact me.</p>
-            <p>+7 978 678 92 97</p>
-            <p>Photographs on this website are available for purchase.</p>
-          </div>
+          <ContentBlock />
           <form className="form__block" onSubmit={handleSubmit(onSubmit)}>
             <div className="name__block">
               <label>
                 First Name*
                 <input
                   {...register('firstName', {
-                    required: true,
+                    required: 'Required field!',
+                    minLength: {
+                      value: 4,
+                      message: 'Minimum of 4 characters!',
+                    },
                   })}
                 />
               </label>
+              <div>
+                {errors?.firstName && <p>{errors?.firstName?.message || Error!.toString()}</p>}
+              </div>
             </div>
             <div className="name__block">
               <label>
                 Last Name*
                 <input
                   {...register('lastName', {
-                    required: true,
+                    required: 'Required field!',
+                    minLength: {
+                      value: 4,
+                      message: 'Minimum of 4 characters!',
+                    },
                   })}
                 />
               </label>
+              <div>
+                {errors?.lastName && <p>{errors?.lastName?.message || Error!.toString()}</p>}
+              </div>
             </div>
             <div className="email__block">
               <label>
                 Email Address *
                 <input
                   {...register('mail', {
-                    required: true,
+                    required: 'Required field!',
+                    minLength: {
+                      value: 8,
+                      message: 'Minimum of 8 characters!',
+                    },
                   })}
                 />
               </label>
+              <div>{errors?.mail && <p>{errors?.mail?.message || Error!.toString()}</p>}</div>
             </div>
             <div className="message__block">
               <label>
                 Message *
                 <textarea
-                  {...register('message', {
-                    required: true,
+                  value={value}
+                  {...register('messages', {
+                    required: 'Required field!',
+                    minLength: {
+                      value: 20,
+                      message: 'Minimum of 20 characters!',
+                    },
                   })}>
-                  {' '}
+                  S{' '}
                 </textarea>
               </label>
+              <div>
+                {errors?.messages && <p>{errors?.messages?.message || Error!.toString()}</p>}
+              </div>
             </div>
             <input type="submit" value="SUBMIT" className="contact__button" />
           </form>

@@ -1,17 +1,17 @@
-import lily2 from '../../assets/images/lily2.jpg';
-import fantasy5 from '../../assets/images/fantasy5.jpg';
-import evening from '../../assets/images/evening.jpg';
-import fantasy2 from '../../assets/images/fantasy2.jpg';
-import flowers3 from '../../assets/images/flowers3.jpg';
-import girl7 from '../../assets/images/girl7.jpg';
-import nature3 from '../../assets/images/nature3.jpg';
-import wiwi4 from '../../assets/images/wiwi4.jpg';
-import fantasy4 from '../../assets/images/fantasy4.jpg';
-import mountains from '../../assets/images/mountains.jpg';
-import fantasy10 from '../../assets/images/fantasy10.jpg';
-import nature4 from '../../assets/images/nature4.jpg';
-import girl1 from '../../assets/images/girl1.jpg';
-import fon from '../../assets/images/fon.jpg';
+import lily2 from '../../assets/images/Imperfection/lily2.jpg';
+import fantasy5 from '../../assets/images/Imperfection/fantasy5.jpg';
+import evening from '../../assets/images/Imperfection/evening.jpg';
+import fantasy2 from '../../assets/images/Imperfection/fantasy2.jpg';
+import flowers3 from '../../assets/images/Imperfection/flowers3.jpg';
+import girl7 from '../../assets/images/Imperfection/girl7.jpg';
+import nature3 from '../../assets/images/Imperfection/nature3.jpg';
+import wiwi4 from '../../assets/images/Imperfection/wiwi4.jpg';
+import fantasy4 from '../../assets/images/Imperfection/fantasy4.jpg';
+import mountains from '../../assets/images/Imperfection/mountains.jpg';
+import fantasy10 from '../../assets/images/Imperfection/fantasy10.jpg';
+import nature4 from '../../assets/images/Imperfection/nature4.jpg';
+import girl1 from '../../assets/images/Imperfection/girl1.jpg';
+import fon from '../../assets/images/Imperfection/fon.jpg';
 
 export default [
   lily2,
