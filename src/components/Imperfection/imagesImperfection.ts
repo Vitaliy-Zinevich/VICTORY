@@ -11,7 +11,7 @@ import mountains from '../../assets/images/Imperfection/mountains.jpg';
 import fantasy10 from '../../assets/images/Imperfection/fantasy10.jpg';
 import nature4 from '../../assets/images/Imperfection/nature4.jpg';
 import girl1 from '../../assets/images/Imperfection/girl1.jpg';
-import fon from '../../assets/images/Imperfection/fon.jpg';
+import fantasy6 from '../../assets/images/Imperfection/fantasy6.jpg';
 
 export default [
   lily2,
@@ -27,5 +27,5 @@ export default [
   fantasy10,
   nature4,
   girl1,
-  fon,
+  fantasy6,
 ];

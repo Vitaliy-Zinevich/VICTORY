@@ -11,21 +11,23 @@ const PersonalSlider: React.FC = () => {
   }, []);
 
   return (
-    <div className="sliderBlock">
-      <motion.div ref={carousel} className="carousel">
-        <motion.div
-          drag="x"
-          dragConstraints={{ right: 0, left: -width }}
-          className="inner-carousel">
-          {images.map((image) => {
-            return (
-              <motion.div key={image} className="personalSlider">
-                <img src={image} alt="" />
-              </motion.div>
-            );
-          })}
+    <div>
+      <div className="sliderBlock">
+        <motion.div ref={carousel} className="carousel">
+          <motion.div
+            drag="x"
+            dragConstraints={{ right: 0, left: -width }}
+            className="inner-carousel">
+            {images.map((image) => {
+              return (
+                <motion.div key={image} className="personalSlider">
+                  <img src={image} alt="" />
+                </motion.div>
+              );
+            })}
+          </motion.div>
         </motion.div>
-      </motion.div>
+      </div>
     </div>
   );
 };

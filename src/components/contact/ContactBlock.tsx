@@ -14,6 +14,10 @@ const ContactBlock: React.FC = () => {
 
   const [value, setValue] = useState('');
 
+  const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
+    setValue(event.target.value);
+  };
+
   const {
     register,
     formState: { errors },
@@ -89,6 +93,7 @@ const ContactBlock: React.FC = () => {
                 <textarea
                   value={value}
                   {...register('messages', {
+                    onChange: handleChange,
                     required: 'Required field!',
                     minLength: {
                       value: 20,

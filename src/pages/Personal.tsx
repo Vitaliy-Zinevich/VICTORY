@@ -14,7 +14,7 @@ const Personal: React.FC = () => {
           </Link>
         </li>
         <li>
-          <Link to="#" className="sub-menu__link1">
+          <Link to="/life" className="sub-menu__link1">
             Life
           </Link>
         </li>

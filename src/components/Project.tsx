@@ -7,6 +7,7 @@ import Footer from './Footer';
 import ContactBlock from './contact/ContactBlock';
 
 import { Route, Routes } from 'react-router-dom';
+import Life from '../pages/Life';
 
 const Project: React.FC = () => {
   return (
@@ -17,6 +18,7 @@ const Project: React.FC = () => {
         <Route path="/" element={<PersonalSlider />} />
         <Route path="/imperfection" element={<Imperfection />} />
         <Route path="/contact" element={<ContactBlock />} />
+        <Route path="/life" element={<Life />} />
       </Routes>
       <Footer />
     </div>
