@@ -1,61 +1,55 @@
 @import '../variables';
 
 .menu {
+  a {
+    display: block;
+    text-decoration: none;
+    color: $hover;
+
+    &:hover {
+      color: $black;
+      font-weight: bolder;
+    }
+  }
+
+  li {
+    list-style-type: none;
+    position: relative;
+
+    &:hover .sub-menu__list {
+      display: block;
+      z-index: 999;
+    }
+  }
+}
+
+.menu__list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.sub-menu__list {
+  display: none;
+  position: absolute;
+  left: 0px;
+  padding: 10px 5px 5px 5px;
+  background-color: $background;
+
+  li {
+    padding: 10px 0px 0px 0px;
 
     a {
-       display: block;
-       text-decoration: none;
-       color: $hover;
-       
- 
-       &:hover {
-         color: $black;
-         font-weight: bolder;
-     }
-    }
- 
-    li {
-       list-style-type: none;
-       position: relative;
-       
-         &:hover .sub-menu__list{
-              display: block;
-              z-index: 999;
-     }
-    }
- }
- 
- .menu__list {
-     display: flex;
-     justify-content: space-around;
- }
- 
- .sub-menu__list {
-     display: none;
-     position: absolute;
-     left: 0px;
-     padding: 3px 0px 0px 0px;
-     background-color: $background;
- 
-     li {
-        padding: 10px 0px 0px 0px;
-    
-     a {
-         color: $hover;
-    
- 
-         &:hover{
-             color: $black;
-             font-weight: bolder;
- 
-         }
-     }
-     }
- }
+      color: $hover;
 
+      &:hover {
+        color: $black;
+        font-weight: bolder;
+      }
+    }
+  }
+}
 
- .footer {
-    margin-top: 50px;
-    margin-left: 800px;
- }
- 
+.footer {
+  margin-top: 50px;
+  margin-left: 800px;
+}

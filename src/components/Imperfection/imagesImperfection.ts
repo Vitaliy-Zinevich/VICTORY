@@ -1,6 +1,6 @@
 import lily2 from '../../assets/images/Imperfection/lily2.jpg';
 import fantasy5 from '../../assets/images/Imperfection/fantasy5.jpg';
-import evening from '../../assets/images/Imperfection/evening.jpg';
+import actor from '../../assets/images/Imperfection/actor.jpg';
 import fantasy2 from '../../assets/images/Imperfection/fantasy2.jpg';
 import flowers3 from '../../assets/images/Imperfection/flowers3.jpg';
 import girl7 from '../../assets/images/Imperfection/girl7.jpg';
@@ -16,7 +16,7 @@ import fantasy6 from '../../assets/images/Imperfection/fantasy6.jpg';
 export default [
   lily2,
   fantasy5,
-  evening,
+  actor,
   fantasy2,
   flowers3,
   girl7,

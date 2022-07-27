@@ -20,7 +20,7 @@ const ContactBlock: React.FC = () => {
 
   const {
     register,
-    formState: { errors },
+    formState: { errors, isValid },
     handleSubmit,
     reset,
   } = useForm<Inputs>({
@@ -30,6 +30,7 @@ const ContactBlock: React.FC = () => {
   const onSubmit: SubmitHandler<Inputs> = (data) => {
     alert(JSON.stringify(data));
     reset();
+    setValue('');
   };
 
   return (
@@ -107,7 +108,7 @@ const ContactBlock: React.FC = () => {
                 {errors?.messages && <p>{errors?.messages?.message || Error!.toString()}</p>}
               </div>
             </div>
-            <input type="submit" value="SUBMIT" className="contact__button" />
+            <input type="submit" value="SUBMIT" className="contact__button" disabled={!isValid} />
           </form>
         </div>
       </div>

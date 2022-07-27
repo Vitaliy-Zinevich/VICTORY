@@ -1,6 +1,8 @@
-import React from 'react';
+import { useEffect } from 'react';
 import OverlayScrollbars from 'overlayscrollbars';
 
-const useScrollbar = () => {};
+const useScrollbar = () => {
+  useEffect(() => {}, []);
+};
 
 export { useScrollbar };
