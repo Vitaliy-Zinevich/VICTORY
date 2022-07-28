@@ -1,6 +1,6 @@
 import React from 'react';
 import Personal from '../pages/Personal';
-import Commissioned from '../pages/Commissioned';
+import Improvisation from '../pages/Improvisation';
 import Video from '../pages/Video';
 import About from '../pages/About';
 import Contact from '../pages/Contact';
@@ -13,8 +13,8 @@ const Menu: React.FC = () => {
       <nav className="menu">
         <ul className="menu__list">
           <Personal />
-          <Commissioned />
           <Video />
+          <Improvisation />
           <About />
           <Contact />
           <Vk />

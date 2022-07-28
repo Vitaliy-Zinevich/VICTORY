@@ -19,7 +19,7 @@ const Personal: React.FC = () => {
           </Link>
         </li>
         <li>
-          <Link to="#" className="sub-menu__link1">
+          <Link to="/amen" className="sub-menu__link1">
             AMEN
           </Link>
         </li>

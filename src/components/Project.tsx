@@ -8,6 +8,7 @@ import ContactBlock from './contact/ContactBlock';
 
 import { Route, Routes } from 'react-router-dom';
 import Life from '../pages/Life';
+import Amen from '../pages/Amen';
 
 const Project: React.FC = () => {
   return (
@@ -19,6 +20,7 @@ const Project: React.FC = () => {
         <Route path="/imperfection" element={<Imperfection />} />
         <Route path="/contact" element={<ContactBlock />} />
         <Route path="/life" element={<Life />} />
+        <Route path="/amen" element={<Amen />} />
       </Routes>
       <Footer />
     </div>
