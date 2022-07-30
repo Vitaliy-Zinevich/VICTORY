@@ -1,31 +1,41 @@
-import { motion } from 'framer-motion';
-import { useRef, useState, useEffect } from 'react';
-import images from '../life/imagesLife';
+import { useState } from 'react';
+import BtnSlider from '../BtnSlider';
+import dataSliderLife from './dataSliderLife';
 
-const LifeSlider = () => {
-  const [width, setWidth] = useState(0);
-  const carousel = useRef() as React.MutableRefObject<HTMLDivElement>;
+const LifeSlider: React.FC = () => {
+  const [slideIndex, setSlideIndex] = useState(1);
 
-  useEffect(() => {
-    setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
-  }, []);
+  const nextSlide = () => {
+    if (slideIndex !== dataSliderLife.length) {
+      setSlideIndex(slideIndex + 1);
+    } else if (slideIndex === dataSliderLife.length) {
+      setSlideIndex(1);
+    }
+  };
+
+  const prevSlide = () => {
+    if (slideIndex !== 1) {
+      setSlideIndex(slideIndex - 1);
+    } else if (slideIndex === 1) {
+      setSlideIndex(dataSliderLife.length);
+    }
+  };
+
+  const moveDot = (index: number) => {
+    setSlideIndex(index);
+  };
 
   return (
-    <div className="sliderBlock">
-      <motion.div ref={carousel} className="carousel">
-        <motion.div
-          drag="x"
-          dragConstraints={{ right: 0, left: -width }}
-          className="inner-carousel">
-          {images.map((image) => {
-            return (
-              <motion.div key={image} className="personalSlider">
-                <img src={image} alt="" />
-              </motion.div>
-            );
-          })}
-        </motion.div>
-      </motion.div>
+    <div className="container-slide">
+      {dataSliderLife.map((obj, index) => {
+        return (
+          <div key={obj.id} className={slideIndex === index + 1 ? 'slide active-anim' : 'slide'}>
+            <img src={process.env.PUBLIC_URL + `/ImgLife/img${index + 1}.jpg`} />
+          </div>
+        );
+      })}
+      <BtnSlider moveSlide={nextSlide} direction={'next'} />
+      <BtnSlider moveSlide={prevSlide} direction={'prev'} />
     </div>
   );
 };
