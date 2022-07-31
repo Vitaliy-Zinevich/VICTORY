@@ -1,6 +1,13 @@
+import React from 'react';
 import { useState } from 'react';
 import BtnSlider from '../BtnSlider';
 import dataSliderImperfection from './dataSliderImperfection';
+
+interface Slide {
+  id: string;
+  name: string;
+  subTitle: string;
+}
 
 const ImperfectionSlider: React.FC = () => {
   const [slideIndex, setSlideIndex] = useState(1);
@@ -29,13 +36,24 @@ const ImperfectionSlider: React.FC = () => {
     <div className="container-slide">
       {dataSliderImperfection.map((obj, index) => {
         return (
-          <div key={obj.id} className={slideIndex === index + 1 ? 'slide active-anim' : 'slide'}>
-            <img src={process.env.PUBLIC_URL + `/ImgImperfection/img${index + 1}.jpg`} />
-          </div>
+          <React.Fragment key={obj.id}>
+            <div className={slideIndex === index + 1 ? 'slide active-anim' : 'slide'}>
+              <img src={process.env.PUBLIC_URL + `/ImgImperfection/img${index + 1}.jpg`} />
+            </div>
+          </React.Fragment>
         );
       })}
       <BtnSlider moveSlide={nextSlide} direction={'next'} />
       <BtnSlider moveSlide={prevSlide} direction={'prev'} />
+      <div className="container-dots">
+        {Array.from({ length: dataSliderImperfection.length }).map((item, index) => (
+          <div
+            key={index}
+            onClick={() => moveDot(index + 1)}
+            className={slideIndex === index + 1 ? 'dot active' : 'dot'}></div>
+        ))}
+        console.log(item);
+      </div>
     </div>
   );
 };

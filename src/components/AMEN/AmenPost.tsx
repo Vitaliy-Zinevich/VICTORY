@@ -21,7 +21,7 @@ const textVariants = {
 
 const AmenPost = () => {
   return (
-    <div className="imperfectionPost">
+    <div className="amenPost">
       {items.map((el, i) => (
         <motion.p key={el} variants={textVariants} initial="hidden" animate="visible" custom={i}>
           {el}
