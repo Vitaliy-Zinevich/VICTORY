@@ -1,9 +1,13 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import BtnSlider from '../BtnSlider';
 import dataSliderLife from './dataSliderLife';
 
 const LifeSlider: React.FC = () => {
   const [slideIndex, setSlideIndex] = useState(1);
+
+  const autoScroll = true;
+  let slideInterval: NodeJS.Timer;
+  let intervalTime = 4000;
 
   const nextSlide = () => {
     if (slideIndex !== dataSliderLife.length) {
@@ -24,6 +28,21 @@ const LifeSlider: React.FC = () => {
   const moveDot = (index: number) => {
     setSlideIndex(index);
   };
+
+  function auto() {
+    slideInterval = setInterval(nextSlide, intervalTime);
+  }
+
+  useEffect(() => {
+    setSlideIndex(1);
+  }, []);
+
+  useEffect(() => {
+    if (autoScroll) {
+      auto();
+    }
+    return () => clearInterval(slideInterval);
+  }, [slideIndex]);
 
   return (
     <div className="container-slide">

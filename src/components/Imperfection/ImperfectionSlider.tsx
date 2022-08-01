@@ -1,16 +1,14 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import BtnSlider from '../BtnSlider';
 import dataSliderImperfection from './dataSliderImperfection';
 
-interface Slide {
-  id: string;
-  name: string;
-  subTitle: string;
-}
-
 const ImperfectionSlider: React.FC = () => {
   const [slideIndex, setSlideIndex] = useState(1);
+
+  const autoScroll = true;
+  let slideInterval: NodeJS.Timer;
+  let intervalTime = 4000;
 
   const nextSlide = () => {
     if (slideIndex !== dataSliderImperfection.length) {
@@ -32,6 +30,21 @@ const ImperfectionSlider: React.FC = () => {
     setSlideIndex(index);
   };
 
+  function auto() {
+    slideInterval = setInterval(nextSlide, intervalTime);
+  }
+
+  useEffect(() => {
+    setSlideIndex(1);
+  }, []);
+
+  useEffect(() => {
+    if (autoScroll) {
+      auto();
+    }
+    return () => clearInterval(slideInterval);
+  }, [slideIndex]);
+
   return (
     <div className="container-slide">
       {dataSliderImperfection.map((obj, index) => {
@@ -52,7 +65,6 @@ const ImperfectionSlider: React.FC = () => {
             onClick={() => moveDot(index + 1)}
             className={slideIndex === index + 1 ? 'dot active' : 'dot'}></div>
         ))}
-        console.log(item);
       </div>
     </div>
   );
