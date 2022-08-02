@@ -28,7 +28,7 @@ const ContactBlock: React.FC = () => {
   });
 
   const onSubmit: SubmitHandler<Inputs> = (data) => {
-    alert(JSON.stringify(data));
+    console.log(JSON.stringify(data));
     reset();
     setValue('');
   };

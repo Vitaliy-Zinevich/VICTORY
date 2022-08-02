@@ -8,7 +8,7 @@ const ImperfectionSlider: React.FC = () => {
 
   const autoScroll = true;
   let slideInterval: NodeJS.Timer;
-  let intervalTime = 4000;
+  let intervalTime = 5000;
 
   const nextSlide = () => {
     if (slideIndex !== dataSliderImperfection.length) {
