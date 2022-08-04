@@ -38,7 +38,11 @@ const ContactBlock: React.FC = () => {
       <div className="container">
         <div className="contact__block">
           <ContentBlock />
-          <form className="form__block" onSubmit={handleSubmit(onSubmit)}>
+          <form
+            className="form__block"
+            onSubmit={handleSubmit(onSubmit)}
+            action="sent_mail.php"
+            method="POST">
             <div className="name__block">
               <label>
                 First Name*
