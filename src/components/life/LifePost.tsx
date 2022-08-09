@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion';
 
 let Text1: string =
-  'I photographed when I thought it was necessary, capturing faces and places, notquite understanding what my work was leading to.';
+  'Я фотографировал, когда считал это необходимым, запечатлевая лица и места, не совсем понимая, к чему ведет моя работа.';
 let Text2: string =
-  'Looking back, I realize that this path was the beginning of how I look at things today. I was often attracted to ‘unusual’ people and places. There is a kind of essential energy shining in all this, where the spiritual far outweighs the material';
+  'Оглядываясь назад, я понимаю, что этот путь был началом того, как я смотрю на вещи сегодня. Меня часто привлекали ‘необычные’ люди и места. Во всем этом сияет некая сущностная энергия, в которой духовное намного перевешивает материальное.';
 
 const items: string[] = [Text1, Text2];
 

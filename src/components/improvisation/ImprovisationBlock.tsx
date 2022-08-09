@@ -1,7 +1,11 @@
 import React from 'react';
 
 const Improvisation = () => {
-  return <div>Improvisation</div>;
+  return (
+    <div className="container">
+      <div>Improvisation</div>
+    </div>
+  );
 };
 
 export default Improvisation;

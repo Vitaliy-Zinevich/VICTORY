@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
 
 let Text1: string =
-  'Yet where should beauty be found if not in banality, in the fleeting gesturesand repetitive rhythms of daily life that fade so far into the background that they becomeworkaday, unlovely – in a word, imperfect?';
+  'Но где же искать красоту, если не в банальности, в мимолетных жестах и повторяющихся ритмах повседневной жизни, которые настолько отходят на второй план, что становятся будничными, некрасивыми – одним словом, несовершенными?';
 let Text2: string =
-  'We tend to think of beauty as flawless. Yet perfection is often so perfect, it becomesbland.';
+  'Мы склонны думать о красоте как о безупречной. И все же совершенство часто бывает настолько совершенным, что становится пресным.';
 let Text3: string =
-  'A hymn to human ingenuity in a land where machines are not yet king, where life still hassoul.';
+  'Гимн человеческой изобретательности в стране, где машины еще не стали королями, где у жизни все еще есть душа.';
 
 const items: string[] = [Text1, Text2, Text3];
 

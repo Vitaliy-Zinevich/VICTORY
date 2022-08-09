@@ -23,6 +23,8 @@ const Project: React.FC = () => {
         <Route path="/life" element={<Life />} />
         <Route path="/amen" element={<Amen />} />
         <Route path="/improvisation" element={<ImprovisationBlock />} />
+        <Route path="/biography" />
+        <Route path="/hobby" />
       </Routes>
       <Footer />
     </div>

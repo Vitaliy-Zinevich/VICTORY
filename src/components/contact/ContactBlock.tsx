@@ -101,8 +101,8 @@ const ContactBlock: React.FC = () => {
                     onChange: handleChange,
                     required: 'Required field!',
                     minLength: {
-                      value: 20,
-                      message: 'Minimum of 20 characters!',
+                      value: 10,
+                      message: 'Minimum of 10 characters!',
                     },
                   })}>
                   S{' '}

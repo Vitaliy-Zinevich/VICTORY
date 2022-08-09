@@ -1,10 +1,9 @@
 import { motion } from 'framer-motion';
 
-let Text1: string = 'Sometimes the blackest black yields the brightest beams of light.';
+let Text1: string = 'Иногда самая черная чернота дает самые яркие лучи света.';
 let Text2: string =
-  ' It was my first relationship without words, my first project without a pre-defined goal.';
-let Text3: string =
-  'But it happens that standing at the goal, you realize that the path itself was much more important.';
+  ' Это были мои первые отношения без слов, мой первый проект без заранее определенной цели.';
+let Text3: string = ' Но бывает так, что, стоя у цели, понимаешь, что сам путь был гораздо важнее.';
 
 const items: string[] = [Text1, Text2, Text3];
 

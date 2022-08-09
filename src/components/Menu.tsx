@@ -1,8 +1,8 @@
 import React from 'react';
 import Personal from '../pages/Personal';
 import Improvisation from '../pages/Improvisation';
-import Video from '../pages/Video';
-import About from '../pages/About';
+import Hobby from '../pages/Hobby';
+import Biography from '../pages/Biography';
 import Contact from '../pages/Contact';
 import Vk from './Vk';
 import Instagram from './Instagram';
@@ -13,9 +13,9 @@ const Menu: React.FC = () => {
       <nav className="menu">
         <ul className="menu__list">
           <Personal />
-          <Video />
           <Improvisation />
-          <About />
+          <Hobby />
+          <Biography />
           <Contact />
           <Vk />
           <Instagram />
