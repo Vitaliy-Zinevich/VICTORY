@@ -2,7 +2,6 @@ import React from 'react';
 import Personal from '../pages/Personal';
 import Improvisation from '../pages/Improvisation';
 import Hobby from '../pages/Hobby';
-import Biography from '../pages/Biography';
 import Contact from '../pages/Contact';
 import Vk from './Vk';
 import Instagram from './Instagram';
@@ -15,7 +14,6 @@ const Menu: React.FC = () => {
           <Personal />
           <Improvisation />
           <Hobby />
-          <Biography />
           <Contact />
           <Vk />
           <Instagram />

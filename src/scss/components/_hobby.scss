@@ -1,0 +1,23 @@
+.content__hobby {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 200px 200px 190px;
+  grid-column-gap: 1%;
+  grid-row-gap: 1%;
+}
+
+.content__item {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid rgb(167, 162, 162);
+
+  img {
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease;
+
+    &:hover {
+      transform: scale(1.3);
+    }
+  }
+}

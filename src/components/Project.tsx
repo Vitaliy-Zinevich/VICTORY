@@ -10,6 +10,7 @@ import { Route, Routes } from 'react-router-dom';
 import Life from '../pages/Life';
 import Amen from '../pages/Amen';
 import ImprovisationBlock from './improvisation/ImprovisationBlock';
+import HobbyBlock from './Hobby/HobbyBlock';
 
 const Project: React.FC = () => {
   return (
@@ -23,8 +24,7 @@ const Project: React.FC = () => {
         <Route path="/life" element={<Life />} />
         <Route path="/amen" element={<Amen />} />
         <Route path="/improvisation" element={<ImprovisationBlock />} />
-        <Route path="/biography" />
-        <Route path="/hobby" />
+        <Route path="/hobby" element={<HobbyBlock />} />
       </Routes>
       <Footer />
     </div>
