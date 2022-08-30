@@ -1,21 +1,25 @@
 @import '../variables';
 
-.header{
-    padding-top: 10px;
-    color: $black;
-    text-decoration: none;
+.header {
+  padding-top: 10px;
+  color: $black;
+  text-decoration: none;
 
-    h1 {
-        
-        text-align: center;
-        font-size: 44px;
-        font-weight: 700;
+  @media (max-width: 650px) {
+    padding-top: 5px;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 44px;
+    font-weight: 700;
+
+    @media (max-width: 550px) {
+      font-size: 34px;
     }
+
+    @media (max-width: 450px) {
+      font-size: 29px;
+    }
+  }
 }
-
-
-
-
-     
-
-    

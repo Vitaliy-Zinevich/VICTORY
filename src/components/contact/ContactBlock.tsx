@@ -35,7 +35,7 @@ const ContactBlock: React.FC = () => {
 
   return (
     <div className="contact__wrapper">
-      <div className="container">
+      <div className="container__contact">
         <div className="contact__block">
           <ContentBlock />
           <form

@@ -1,5 +1,12 @@
 @import '../variables';
 
+.container__contact {
+  max-width: 800px;
+  height: 600px;
+  margin: 10px auto 0;
+  background-color: #ffffff;
+}
+
 .contact__block {
   display: flex;
   justify-content: space-between;
