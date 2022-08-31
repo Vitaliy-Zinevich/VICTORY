@@ -5,8 +5,6 @@ import img1 from '../../assets/improvisation/inst1.jpg';
 import img2 from '../../assets/improvisation/inst2.jpg';
 import img3 from '../../assets/improvisation/inst3.jpg';
 import img4 from '../../assets/improvisation/inst4.jpg';
-import insImg from '../../assets/instagram.jpg';
-import vkImg from '../../assets/vk.png';
 
 const Improvisation = () => {
   let settings = {
@@ -25,21 +23,9 @@ const Improvisation = () => {
             <div className="card-image">
               <img src={img1} />
             </div>
-            <ul className="social-icons">
-              <li>
-                <a href="#">
-                  <img src={vkImg} />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <img src={insImg} />
-                </a>
-              </li>
-            </ul>
             <div className="details">
               <h2>
-                ФИО <span className="job-title">Цена</span>
+                everwoods <span className="job-title">Цена</span>
               </h2>
             </div>
           </div>
@@ -49,21 +35,9 @@ const Improvisation = () => {
             <div className="card-image">
               <img src={img2} />
             </div>
-            <ul className="social-icons">
-              <li>
-                <a href="#">
-                  <i className="fa fa-vk"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i className="fa fa-instagram"></i>
-                </a>
-              </li>
-            </ul>
             <div className="details">
               <h2>
-                ФИО <span className="job-title">Цена</span>
+                everwoods <span className="job-title">Цена</span>
               </h2>
             </div>
           </div>
@@ -73,21 +47,9 @@ const Improvisation = () => {
             <div className="card-image">
               <img src={img3} />
             </div>
-            <ul className="social-icons">
-              <li>
-                <a href="#">
-                  <i className="fa fa-vk"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i className="fa fa-instagram"></i>
-                </a>
-              </li>
-            </ul>
             <div className="details">
               <h2>
-                ФИО <span className="job-title">Цена</span>
+                everwoods <span className="job-title">Цена</span>
               </h2>
             </div>
           </div>
@@ -97,21 +59,9 @@ const Improvisation = () => {
             <div className="card-image">
               <img src={img4} />
             </div>
-            <ul className="social-icons">
-              <li>
-                <a href="#">
-                  <i className="fa fa-vk"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i className="fa fa-instagram"></i>
-                </a>
-              </li>
-            </ul>
             <div className="details">
               <h2>
-                ФИО <span className="job-title">Цена</span>
+                everwoods <span className="job-title">Цена</span>
               </h2>
             </div>
           </div>
