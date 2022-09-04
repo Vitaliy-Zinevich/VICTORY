@@ -17,6 +17,7 @@ const Menu: React.FC = () => {
           <Contact />
           <Vk />
           <Instagram />
+          <a className="menu__icon">&#9776;</a>
         </ul>
       </nav>
     </div>

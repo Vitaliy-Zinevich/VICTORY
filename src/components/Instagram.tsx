@@ -1,4 +1,5 @@
 import React from 'react';
+
 import insSvg from '../assets/icon.svg';
 
 const Instagram: React.FC = () => {

@@ -2,7 +2,6 @@
 
 .menu {
   a {
-    display: block;
     text-decoration: none;
     color: $hover;
 
@@ -20,12 +19,50 @@
       display: block;
       z-index: 999;
     }
+
+    @media (max-width: 650px) {
+      display: none;
+    }
   }
 }
 
 .menu__list {
   display: flex;
   justify-content: space-around;
+
+  @media (max-width: 750px) {
+    font-size: 15px;
+  }
+}
+
+.menu__icon {
+  font-size: 24px;
+  display: none;
+  cursor: pointer;
+
+  @media (max-width: 650px) {
+    display: block;
+    margin-right: 190px;
+    font-size: 30px;
+  }
+
+  @media (max-width: 550px) {
+    display: block;
+    margin-right: 150px;
+    font-size: 27px;
+  }
+
+  @media (max-width: 450px) {
+    display: block;
+    margin-right: 120px;
+    font-size: 27px;
+  }
+
+  @media (max-width: 400px) {
+    display: block;
+    margin-right: 100px;
+    font-size: 27px;
+  }
 }
 
 .sub-menu__list {
