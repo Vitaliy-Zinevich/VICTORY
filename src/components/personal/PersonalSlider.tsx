@@ -60,7 +60,7 @@ const PersonalSlider: React.FC = () => {
           <div
             key={index}
             onClick={() => moveDot(index + 1)}
-            className={slideIndex === index + 1 ? 'dot active' : 'dot'}></div>
+            className={slideIndex === index + 1 ? 'dot active1' : 'dot1'}></div>
         ))}
       </div>
     </div>

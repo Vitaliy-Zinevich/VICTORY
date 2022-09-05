@@ -9,6 +9,51 @@
   background-color: rgba(151, 150, 150, 0.1);
   position: relative;
   overflow: 1;
+
+  @media (max-width: 850px) {
+    max-width: 700px;
+  }
+
+  @media (max-width: 800px) {
+    height: 450px;
+  }
+
+  @media (max-width: 800px) {
+    height: 450px;
+  }
+
+  @media (max-width: 700px) {
+    max-width: 550px;
+  }
+
+  @media (max-width: 650px) {
+    max-width: 480px;
+    height: 400px;
+  }
+
+  @media (max-width: 570px) {
+    max-width: 440px;
+  }
+
+  @media (max-width: 510px) {
+    max-width: 400px;
+    height: 350px;
+  }
+
+  @media (max-width: 480px) {
+    max-width: 340px;
+    height: 320px;
+  }
+
+  @media (max-width: 410px) {
+    max-width: 320px;
+    height: 300px;
+  }
+
+  @media (max-width: 410px) {
+    max-width: 320px;
+    height: 280px;
+  }
 }
 
 .slide {
@@ -25,6 +70,71 @@
     max-width: 400px;
     border-radius: 1rem;
     object-fit: cover;
+
+    @media (max-width: 850px) {
+      margin-left: 160px;
+    }
+
+    @media (max-width: 800px) {
+      margin-left: 150px;
+      width: 380px;
+    }
+
+    @media (max-width: 770px) {
+      margin-left: 130px;
+      width: 360px;
+    }
+
+    @media (max-width: 700px) {
+      margin-left: 105px;
+      width: 340px;
+    }
+
+    @media (max-width: 650px) {
+      margin-left: 86px;
+      width: 310px;
+    }
+
+    @media (max-width: 570px) {
+      margin-left: 75px;
+      width: 280px;
+    }
+
+    @media (max-width: 570px) {
+      margin-left: 67px;
+    }
+
+    @media (max-width: 510px) {
+      width: 250px;
+      margin-left: 70px;
+    }
+
+    @media (max-width: 480px) {
+      width: 210px;
+      margin-left: 60px;
+    }
+
+    @media (max-width: 425px) {
+      margin-left: 51px;
+    }
+
+    @media (max-width: 410px) {
+      width: 190px;
+      margin-left: 55px;
+    }
+
+    @media (max-width: 391px) {
+      margin-left: 50px;
+    }
+
+    @media (max-width: 376px) {
+      margin-left: 43px;
+    }
+
+    @media (max-width: 370px) {
+      width: 170px;
+      margin-left: 41px;
+    }
   }
 }
 
@@ -43,6 +153,26 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+
+  @media (max-width: 800px) {
+    width: 40px;
+    height: 40px;
+  }
+
+  @media (max-width: 700px) {
+    width: 35px;
+    height: 35px;
+  }
+
+  @media (max-width: 525px) {
+    width: 30px;
+    height: 30px;
+  }
+
+  @media (max-width: 480px) {
+    width: 25px;
+    height: 25px;
+  }
 
   img {
     width: 40px;

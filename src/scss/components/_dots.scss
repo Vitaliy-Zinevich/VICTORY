@@ -6,6 +6,10 @@
   transform: translateX(-50%);
   display: flex;
   bottom: -44px;
+
+  @media (max-width: 600px) {
+    bottom: -24px;
+  }
 }
 .dot {
   width: 20px;
@@ -14,7 +18,71 @@
   border: 3px solid #f1f1f1;
   margin: 0 5px;
   background: #9c9b9b;
+
+  @media (max-width: 700px) {
+    width: 15px;
+    height: 15px;
+  }
+
+  @media (max-width: 600px) {
+    width: 12px;
+    height: 12px;
+    margin: 0 3px;
+  }
+
+  @media (max-width: 510px) {
+    width: 8px;
+    height: 8px;
+    margin: 0 2px;
+  }
+
+  @media (max-width: 370px) {
+    width: 6px;
+    height: 6px;
+    margin: 0 1px;
+  }
 }
 .dot.active {
+  background: rgb(46, 45, 45);
+}
+
+.dot1 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3px solid #f1f1f1;
+  margin: 0 5px;
+  background: #9c9b9b;
+
+  @media (max-width: 700px) {
+    width: 15px;
+    height: 15px;
+  }
+
+  @media (max-width: 600px) {
+    width: 12px;
+    height: 12px;
+    margin: 0 3px;
+  }
+
+  @media (max-width: 510px) {
+    width: 8px;
+    height: 8px;
+    margin: 0 2px;
+  }
+
+  @media (max-width: 490px) {
+    width: 6px;
+    height: 6px;
+    margin: 0 1px;
+  }
+
+  @media (max-width: 410px) {
+    width: 4px;
+    height: 4px;
+    margin: 0 1px;
+  }
+}
+.dot.active1 {
   background: rgb(46, 45, 45);
 }
