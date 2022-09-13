@@ -99,11 +99,11 @@ const ContactBlock: React.FC = () => {
                   value={value}
                   {...register('messages', {
                     onChange: handleChange,
-                    required: 'Required field!',
-                    minLength: {
-                      value: 10,
-                      message: 'Minimum of 10 characters!',
-                    },
+                    // required: 'Required field!',
+                    // minLength: {
+                    //   value: 10,
+                    //   message: 'Minimum of 10 characters!',
+                    // },
                   })}>
                   S{' '}
                 </textarea>

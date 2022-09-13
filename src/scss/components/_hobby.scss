@@ -4,6 +4,10 @@
   height: 510px;
   margin: 10px auto 0;
   background-color: rgba(151, 150, 150, 0.1);
+
+  @media (max-width: 800px) {
+    height: 400px;
+  }
 }
 
 .item {
@@ -11,12 +15,21 @@
   min-width: 280px;
   padding: 10px;
 
+  @media (max-width: 800px) {
+    padding: 5px;
+  }
+
   img {
     width: 250px;
     height: 400px;
     border-radius: 10px;
     padding-left: 15px;
     pointer-events: none;
+
+    @media (max-width: 800px) {
+      width: 200px;
+      height: 300px;
+    }
   }
 }
 
