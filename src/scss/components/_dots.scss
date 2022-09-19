@@ -82,6 +82,12 @@
     height: 4px;
     margin: 0 1px;
   }
+
+  @media (max-width: 340px) {
+    width: 3px;
+    height: 3px;
+    margin: 0 1px;
+  }
 }
 .dot.active1 {
   background: rgb(46, 45, 45);
