@@ -18,7 +18,7 @@ const Header: React.FC = () => {
           transition={{
             delay: 0.2,
           }}>
-          𝒱𝒾𝒸𝓉𝑜𝓇𝒾𝒶 𝒮𝒽𝑒𝓀𝒽𝑜𝓋𝓉𝓈𝑜𝓋𝒶
+          Victoria Shekhovtsova
         </motion.h1>
       </div>
     </Link>

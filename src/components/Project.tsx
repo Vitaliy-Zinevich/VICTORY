@@ -13,6 +13,8 @@ import ImprovisationBlock from './improvisation/ImprovisationBlock';
 import HobbyBlock from './Hobby/HobbyBlock';
 
 const Project: React.FC = () => {
+  const width = window.innerWidth;
+
   return (
     <div>
       <Header />

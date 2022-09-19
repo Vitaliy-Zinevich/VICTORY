@@ -71,9 +71,7 @@
   margin-top: 50px;
   margin-left: 800px;
 
-  a {
-    @media (max-width: 481px) {
-      padding-right: 45px;
-    }
+  @media (max-width: 900px) {
+    display: none;
   }
 }

@@ -1,5 +1,5 @@
 import Slider from 'react-slick';
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import img1 from '../../assets/improvisation/inst1.jpg';
@@ -26,7 +26,11 @@ const Improvisation = () => {
     cssEase: 'linear',
   };
 
-  const width = window.innerWidth;
+  const [width, setWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    setWidth(window.innerWidth);
+  }, []);
 
   if (width > 550) {
     return (

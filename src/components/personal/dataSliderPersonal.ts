@@ -101,11 +101,6 @@ const dataSliderPersonal = [
     title: 'Personal img',
     subTitle: 'Personal',
   },
-  {
-    id: uuidv4(),
-    title: 'Personal img',
-    subTitle: 'Personal',
-  },
 ];
 
 export default dataSliderPersonal;
