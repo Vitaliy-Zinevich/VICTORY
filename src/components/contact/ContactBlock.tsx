@@ -33,6 +33,25 @@ const ContactBlock: React.FC = () => {
     setValue('');
   };
 
+  const mail = function (thisForm: any) {
+    let formData = new FormData(thisForm);
+
+    let xhr = new XMLHttpRequest();
+
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4) {
+        if (xhr.status === 200) {
+          console.log('Отправлено');
+        }
+      }
+    };
+
+    xhr.open('POST', 'mail.php', true);
+    xhr.send(formData);
+
+    thisForm.reset();
+  };
+
   return (
     <div className="contact__wrapper">
       <div className="container__contact">
@@ -48,7 +67,7 @@ const ContactBlock: React.FC = () => {
                 First Name*
                 <input
                   {...register('firstName', {
-                    required: 'Required field!',
+                    required: 'Введите имя!',
                     minLength: {
                       value: 4,
                       message: 'Minimum of 4 characters!',
@@ -65,7 +84,7 @@ const ContactBlock: React.FC = () => {
                 Last Name*
                 <input
                   {...register('lastName', {
-                    required: 'Required field!',
+                    required: 'Введите фамилию!',
                     minLength: {
                       value: 4,
                       message: 'Minimum of 4 characters!',
@@ -82,7 +101,7 @@ const ContactBlock: React.FC = () => {
                 Email Address *
                 <input
                   {...register('mail', {
-                    required: 'Required field!',
+                    required: 'Введите email!',
                     minLength: {
                       value: 8,
                       message: 'Minimum of 8 characters!',

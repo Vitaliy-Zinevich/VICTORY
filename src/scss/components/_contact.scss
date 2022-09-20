@@ -53,6 +53,10 @@
       padding-right: 175px;
     }
 
+    @media (max-width: 350px) {
+      padding-right: 175px;
+    }
+
     @media (max-width: 375px) {
       padding-right: 185px;
     }
@@ -178,8 +182,8 @@
   }
 
   p {
-    height: 30;
-    color: rgb(151, 13, 13);
+    height: 25;
+    color: rgb(34, 32, 32);
     padding-left: 100px;
 
     @media (max-width: 500px) {
@@ -249,8 +253,8 @@
   }
 
   p {
-    height: 30;
-    color: rgb(151, 13, 13);
+    height: 25;
+    color: rgb(48, 43, 43);
     padding-left: 100px;
 
     @media (max-width: 500px) {
